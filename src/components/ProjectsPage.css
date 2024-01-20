@@ -1,0 +1,48 @@
+.projects-page-container {
+    padding: 100px;
+}
+
+.pp-title {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.pp-title h1, .pp-title p {
+    text-align: center;
+}
+
+.pp-title h1 {
+    margin-bottom: 10px;
+}
+
+.pp-select {
+    background: none;
+    color: white;
+    border: none;
+    text-align: center;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 8px;
+    margin: 0 8px;
+}
+
+.pp-select::-ms-expand {
+    display: none;
+}
+
+.pp-select:focus {
+    outline: none; /* Remove the default focus outline */
+    border-color: #4CAF50; /* Change border color on focus */
+}
+
+.pp-select option {
+    background: black;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .projects-page-container {
+        padding: 90px 20px;
+    }
+}
