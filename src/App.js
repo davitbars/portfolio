@@ -18,11 +18,10 @@ import Calculator from './projects/Calculator';
 
 function App() {
   return (
-    <Router basename="/">
+    <Router basename={process.env.PUBLIC_URL}>
       <NavBar />
       <Routes>
         <Route path='/' element={<HomePage />} />
-        {/* <Route path='/projects/*' element={<ProjectsPage />} /> */}
         <Route path='/projects/:category' element={<ProjectsPage />} />
         <Route path="/weather" element={<Weather />} />
         <Route path='/tictactoe' element={<TicTacToe />} />
