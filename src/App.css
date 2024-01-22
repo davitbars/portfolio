@@ -417,6 +417,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   z-index: -4;
 }
 
+
 /************ Projects Css ************/
 .project {
   padding: 80px 0;
@@ -738,60 +739,35 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
   .banner h1 {
     font-size: 30px;
     min-height: 30px;
   }
 
-  .project p{
+  .project p {
     width: 85%;
   }
 
-  .project .nav.nav-pills{
+  .project .nav.nav-pills {
     width: unset;
   }
 }
 
-.timeline {
-  position: relative;
+.vertical-timeline-element-title,
+.vertical-timeline-element-subtitle,
+.vertical-timeline-element-description {
+  color: black;
+}
+
+.experience h2 {
   text-align: center;
+  margin-bottom: 10px;
+  font-size: 45px;
 }
 
-.timeline-navigation {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.fade-button {
-  opacity: 0.5;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.fade-button:hover {
-  opacity: 1;
-}
-
-.job ul li {
-  list-style-type: none;
-}
-
-.job p {
-  margin: 0;
-}
-
-.job {
-  padding: 80px;
-}
-
-.job-bx {
-  margin-top: 60px;
-}
-
-.skill h2 {
-  color:#C248A0
+.experience {
+  background-image: url('./assets/img/footer-bg.png');
+  background-size: cover;
+  padding: 20px;
 }

@@ -3,7 +3,7 @@ import { Banner } from './Banner';
 import { Skills } from './Skills';
 import { Projects } from './Projects';
 import { Contact } from './Contact';
-import Timeline from './Timeline';
+import WorkTimeline from "./WorkTimeline";
 
 const HomePage = () => {
     return (
@@ -11,8 +11,7 @@ const HomePage = () => {
             <Banner />
             <Skills />
             <Projects />
-            <Timeline />
-
+            <WorkTimeline />
             <Contact />
         </div>
     )

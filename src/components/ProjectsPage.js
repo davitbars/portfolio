@@ -16,7 +16,6 @@ import facialclassifierPic from "../projects/projectPics/facialClassifier.png";
 import linearRegPic from "../projects/projectPics/linearRegression.png";
 
 
-
 const ProjectsPage = () => {
   const navigate = useNavigate();
   const { category } = useParams();

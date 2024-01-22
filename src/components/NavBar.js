@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 
 import linkedin from "../assets/img/linkedin.png";
 import github from "../assets/img/github.png";
-import resume from "../assets/img/resume.png";
+// import resume from "../assets/img/resume.png";
 
 export const NavBar = () => {
 
@@ -55,10 +55,10 @@ export const NavBar = () => {
                 <a href="https://github.com/davitbars" target="_blank" rel="noopener noreferrer">
                   <img src={github} alt="projects" />
                 </a>
-
+{/* 
                 <a href="/#" target="_blank" rel="noopener noreferrer">
                   <img src={resume} alt="skills" />
-                </a>
+                </a> */}
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

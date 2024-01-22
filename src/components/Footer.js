@@ -2,7 +2,7 @@ import { Col, Container, Row } from "react-bootstrap"
 import logo from "../assets/img/logo.png";
 import linkedin from "../assets/img/linkedin.png";
 import github from "../assets/img/github.png";
-import resume from "../assets/img/resume.png";
+// import resume from "../assets/img/resume.png";
 
 export const Footer = () => {
     return (
@@ -22,9 +22,9 @@ export const Footer = () => {
                                 <img src={github} alt="projects" />
                             </a>
 
-                            <a href="/#" target="_blank" rel="noopener noreferrer">
+                            {/* <a href="/#" target="_blank" rel="noopener noreferrer">
                                 <img src={resume} alt="skills" />
-                            </a>
+                            </a> */}
                         </div>
                         <p>CopyRight 2023. All Right Reserved Davit Barseghyan</p>
                     </Col>
