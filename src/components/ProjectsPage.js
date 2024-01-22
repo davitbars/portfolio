@@ -12,12 +12,19 @@ import ULyfePic from "../projects/projectPics/ULyfe.png";
 import adventurePic from "../projects/projectPics/adventure.png";
 import drumkitpic from "../projects/projectPics/drumkit.png";
 import calculatorpic from "../projects/projectPics/calculator.png";
+import facialclassifierPic from "../projects/projectPics/facialClassifier.png";
+import linearRegPic from "../projects/projectPics/linearRegression.png";
+
 
 
 const ProjectsPage = () => {
   const navigate = useNavigate();
   const { category } = useParams();
   const [selectedOption, setSelectedOption] = useState("all");
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
   useEffect(() => {
     if (category) {
@@ -68,7 +75,22 @@ const ProjectsPage = () => {
       imgUrl: calculatorpic,
       link: "/calculator",
       category: "fun"
-    }
+    },
+    //Projects for data
+    {
+      title: "Facial Expression",
+      description: "CNN Classifier",
+      imgUrl: facialclassifierPic,
+      link: "/facial-expression-classifier",
+      category: "data"
+    },
+    {
+      title: "Linear Regression",
+      description: "Housing Data",
+      imgUrl: linearRegPic,
+      link: "/linear-regression",
+      category: "data"
+    },
   ];
   
   // Filter projects based on the selected category

@@ -111,7 +111,7 @@ nav.navbar.scrolled {
 }
 
 nav.navbar a.navbar-brand {
-  width: 9%;
+  width: 40%;
 }
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
@@ -128,9 +128,23 @@ nav.navbar .navbar-nav a.nav-link.navbar-link.active {
   opacity: 1;
 }
 
+pre {
+  font-size: 1em;
+}
+
 @media (max-width: 768px) {
   nav.navbar {
     background-color: black;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  span.navbar-text {
+    justify-content: center;
+    margin-top: 15px;
   }
 }
 
@@ -147,7 +161,7 @@ span.navbar-text {
 .social-icon a {
   width: 42px;
   height: 42px;
-  background: #212529;
+  background: #C248A0;
   display: inline-flex;
   border-radius: 50%;
   margin-right: 6px;
@@ -173,7 +187,7 @@ span.navbar-text {
 }
 
 .social-icon a img {
-  width: 40%;
+  width: 70%;
   z-index: 1;
   transition: 0.3s ease-in-out;
 }
@@ -422,7 +436,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   letter-spacing: 0.8px;
   line-height: 1.5em;
   margin: 14px auto 30px auto;
-  text-align: center;
+  text-align: justify;
   width: 56%;
 }
 
@@ -716,10 +730,6 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-radius: 18px;
 }
 
-.footer img {
-  width: 26%;
-}
-
 .footer p {
   font-weight: 400;
   font-size: 14px;
@@ -741,4 +751,47 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .project .nav.nav-pills{
     width: unset;
   }
+}
+
+.timeline {
+  position: relative;
+  text-align: center;
+}
+
+.timeline-navigation {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fade-button {
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.fade-button:hover {
+  opacity: 1;
+}
+
+.job ul li {
+  list-style-type: none;
+}
+
+.job p {
+  margin: 0;
+}
+
+.job {
+  padding: 80px;
+}
+
+.job-bx {
+  margin-top: 60px;
+}
+
+.skill h2 {
+  color:#C248A0
 }

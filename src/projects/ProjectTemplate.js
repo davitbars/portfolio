@@ -28,7 +28,7 @@ const ProjectTemplate = ({ title, projLink, gitLink, description, photo, contrib
             </h5>
           </div>
         </div>
-        <img src={photo} alt="project screenshot" />
+        <img src={photo} alt="project screenshot" className="project-banner-photo" />
       </div>
       <div>
         <div className="description-body" dangerouslySetInnerHTML={{ __html: description }} />

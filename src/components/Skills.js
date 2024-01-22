@@ -4,6 +4,7 @@ import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
 import { useEffect, useRef } from "react";
 
+
 // icon imports
 import ML from "../assets/img/ML.png";
 import java from "../assets/img/java.png";
@@ -31,7 +32,7 @@ export const Skills = () => {
       return () => {
         clearInterval(interval);
       };
-    }, []); // Empty dependency array ensures the effect runs only once on mount
+    }, []); 
   
     const responsive = {
       superLargeDesktop: {

@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
-import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import logo from '../assets/img/logo.png';
 import { HashLink } from 'react-router-hash-link';
+
+import linkedin from "../assets/img/linkedin.png";
+import github from "../assets/img/github.png";
+import resume from "../assets/img/resume.png";
 
 export const NavBar = () => {
 
@@ -48,17 +49,16 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 <a href="https://www.linkedin.com/in/davit-barseghyan/" target="_blank" rel="noopener noreferrer">
-                  <img src={navIcon1} alt="linkedin" />
+                  <img src={linkedin} alt="linkedin" />
                 </a>
 
-                <a href="/projects" target="_blank" rel="noopener noreferrer">
-                  <img src={navIcon2} alt="projects" />
+                <a href="https://github.com/davitbars" target="_blank" rel="noopener noreferrer">
+                  <img src={github} alt="projects" />
                 </a>
 
-                <a href="skills" target="_blank" rel="noopener noreferrer">
-                  <img src={navIcon3} alt="skills" />
+                <a href="/#" target="_blank" rel="noopener noreferrer">
+                  <img src={resume} alt="skills" />
                 </a>
-
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s Connect</span></button>

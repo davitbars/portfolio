@@ -10,6 +10,10 @@ import weatherImage from "../projects/projectPics/weather.png";
 import tictactoePic from "../projects/projectPics/tictactoe.png";
 import ULyfePic from "../projects/projectPics/ULyfe.png";
 import drumkitpic from "../projects/projectPics/drumkit.png";
+import facialclassifierPic from "../projects/projectPics/facialClassifier.png";
+import linearRegPic from "../projects/projectPics/linearRegression.png";
+
+
 
 export const Projects = () => {
 
@@ -55,6 +59,27 @@ export const Projects = () => {
     }
   ];
 
+  const data = [
+    {
+      title: "Facial Expression",
+      description: "CNN Classifier",
+      imgUrl: facialclassifierPic,
+      link: "/facial-expression-classifier",
+    },  
+    {
+      title: "Linear Regression",
+      description: "Housing Data",
+      imgUrl: linearRegPic,
+      link: "/linear-regression",
+    },
+    {
+      tile: "More Projects",
+      description: "Data Science Projects",
+      imgUrl: plus,
+      link: "/projects/data"
+    }
+  ];
+
   return (
     <section className="project" id="projects">
       <Container>
@@ -80,8 +105,20 @@ export const Projects = () => {
                       </Nav.Item>
                     </Nav>
                     <Tab.Content id="slideInUp" className={isVisible ? "animate__animated animate__slideInUp" : ""}>
+                      {/* Data Science Projects */}
                       <Tab.Pane eventKey="first">
-
+                      <Row>
+                          {
+                            data.map((project, index) => {
+                              return (
+                                <ProjectCard
+                                  key={index}
+                                  {...project}
+                                />
+                              )
+                            })
+                          }
+                        </Row>
                       </Tab.Pane>
                       {/* Full Stack Projects */}
                       <Tab.Pane eventKey="second">

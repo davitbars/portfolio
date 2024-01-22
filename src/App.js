@@ -14,11 +14,13 @@ import ULyfe from './projects/ULyfe';
 import Adventure from './projects/Adventure';
 import DrumKit from './projects/DrumKit';
 import Calculator from './projects/Calculator';
+import FacialClassifier from './projects/FacialClassifier';
+import LinearRegression from './projects/LinearRegression';
 
 
 function App() {
   return (
-    <Router basename={process.env.PUBLIC_URL}>
+    <Router basename='/'>
       <NavBar />
       <Routes>
         <Route path='/' element={<HomePage />} />
@@ -29,6 +31,8 @@ function App() {
         <Route path='/adventure' element={<Adventure />} />
         <Route path='/drumkit' element={<DrumKit />} />
         <Route path='/calculator' element={<Calculator />} />
+        <Route path='/facial-expression-classifier' element={<FacialClassifier />} />
+        <Route path='/linear-regression' element={<LinearRegression />} />
       </Routes>
       <Footer />
     </Router>
